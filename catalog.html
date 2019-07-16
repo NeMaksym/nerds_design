@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang=ru>
+    <head>
+        <meta charset="utf-8">
+        <title>Страница каталога шаблонов Nerd`s</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles-min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    </head>
+    <body class="catalog-page">
+        <header>
+            <nav class="user-navigation container">
+                <a class="logo" href="#"><img src="files/nerds-logo.svg" width="160" height="65" alt="Логотип сайта."></a>
+
+                <ul class="site-navigation" role="menubar">
+                    <li role="menuitem"><a class="menu-item" href="#">Студия</a></li>
+                    <li role="menuitem"><a class="menu-item" href="#">Клиенты</a></li>
+                    <li role="menuitem" aria-current="page"><span class="visually-hidden">Текущий пункт меню.</span><a class="menu-item onpage">Магазин</a></li>
+                    <li role="menuitem"><a class="menu-item" href="#">Контакты</a></li>
+                </ul>
+
+                <a class="cart" href="#">Корзина</a>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Магазин готовых шаблонов</h1>
+           
+            <div class="container catalog-container">
+                <section class="filter-form">
+                    <h2 class="visually-hidden">Фильтры поиска шаблонов</h2>
+                    <form>
+                        <fieldset class="price-range">
+                            <legend>Стоимость:</legend>
+                            <div class="range-block">
+                                <div class="range-line">
+                                    <div class="selected-range-line"></div>
+                                    <div class="toddler min-toddler"></div>
+                                    <div class="toddler max-toddler"></div>
+                                </div>
+                            </div>
+                            <div class="price-fields">
+                                <label>От
+                                    <input type="text" name="from" id="min-value">
+                                </label>
+                                <label>До
+                                    <input type="text" name="to" id="max-value">
+                                </label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="grid-filter">
+                            <legend>Сетка:</legend>
+                            <ul class="grids-list">
+                            <li>
+                               <input class="visually-hidden" type="radio" name="grid-choosen" id="adaptive">
+                               <label for="adaptive">Адаптивная</label>
+                            </li>
+                            <li>
+                               <input class="visually-hidden" type="radio" name="grid-choosen" id="fixed">
+                               <label for="fixed">Фиксированная</label>
+                            </li>
+                            <li>
+                               <input class="visually-hidden" type="radio" name="grid-choosen" id="rubber">
+                               <label for="rubber">Резиновая</label>
+                            </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="features-filter">
+                        <legend>Особенности:</legend>
+                        <ul class="features-list">
+                            <li>
+                                <input class="visually-hidden" type="checkbox" name="slider" id="slider">
+                                <label for="slider">Слайдер</label>
+                            </li>
+                            <li>
+                                <input class="visually-hidden" type="checkbox" name="features-block" id="features-block">
+                                <label for="features-block">Блок преимуществ</label>
+                            </li>
+                            <li>
+                                <input class="visually-hidden" type="checkbox" name="news" id="news">
+                                <label for="news">Новости</label>
+                            </li>
+                            <li>
+                                <input class="visually-hidden" type="checkbox" name="gallery" id="gallery">
+                                <label for="gallery">Галерея</label>
+                            </li>
+                            <li>
+                                <input class="visually-hidden" type="checkbox" name="cart" id="cart">
+                                <label for="cart">Корзина</label>
+                            </li>
+                        </ul>
+                         </fieldset>
+                         <button class="btn-style" type="submit">Показать</button>
+                    </form>
+                </section>
+
+                <div class="catalog-wrapper">
+                    <section class="sort-tools">
+                        <h2>Сортировать:</h2>
+
+                        <p class="sort-type">
+                            <a class="selected" href="#">По цене</a>
+                            <a class="" href="#">По типу</a>
+                            <a class="" href="#">По названию</a>
+                        </p>
+
+                        <p class="sort-order">
+                            <a class="selected" href="#" aria-label="от большего к меньшему.">От большего к меньшему</a>
+                            <a class="" href="#" aria-label="от меньшего к большему.">От меньшего к большему</a>
+                        </p>
+                    </section>
+
+                    <section class="pattern-cards">
+                        <h2 class="visually-hidden">Перечень макетов с указанием цены</h2>
+                        <ul class="cards-wrapper">
+                            <li class="product-card">
+                                 <img src="files/img-sedona.jpg" width="360" height="576" alt="Шаблон туристического сайта 'Седона'.">
+                                 <div class="hover-block">
+                                     <h3 lang="en">Sedona</h3>
+                                     <p>Информационный сайт для туристов</p>
+                                     <button class="btn-style">9 900 руб.</button>
+                                  </div>
+                            </li>
+                            <li class="product-card">
+                                 <img src="files/img-pink.jpg" width="360" height="576" alt="Шаблон сайта-приложения 'Пинк'.">
+                                 <div class="hover-block">
+                                     <h3 lang="en">Pink App</h3>
+                                     <p>Продуктовый лендинг приложение для <span lang="en">iOS</span> и <span lang="en">Android</span></p>
+                                     <button class="btn-style">9 900 руб.</button>
+                                 </div>
+                            </li>
+                            <li class="product-card">
+                                 <img src="files/img-barbershop.jpg" width="360" height="576" alt="Шаблон сайта барбершопв 'Бородинский'.">
+                                 <div class="hover-block">
+                                     <h3 lang="en">Barbershop</h3>
+                                     <p>Сайт салона красоты. Для мужчин, да.</p>
+                                     <button class="btn-style">9 900 руб.</button>
+                                 </div>
+                            </li>
+                            <li class="product-card">
+                                 <img src="files/img-mishka.jpg" width="360" height="576" alt="Шаблон интернет-магазина 'Мишка'.">
+                                 <div class="hover-block">
+                                     <h3 lang="en">Mishka</h3>
+                                     <p>Интернет-магазин вязаных игрушек</p>
+                                     <button class="btn-style">9 900 руб.</button>
+                                 </div>
+                            </li>
+                            <li class="product-card">
+                                 <img src="files/img-aplus.jpg" width="360" height="576" alt="Шаблон лендинга курсов 'А Плюс'.">
+                                 <div class="hover-block">
+                                     <h3 lang="en">A Plus</h3>
+                                     <p>Лендинг курсов повышения квалификации</p>
+                                     <button class="btn-style">9 900 руб.</button>
+                                 </div>
+                            </li>
+                            <li class="product-card">
+                                <img src="files/img-kvast.jpg" width="360" height="576" alt="Шаблон промо-сайта производителя кваса 'Кваст'.">
+                                <div class="hover-block">
+                                    <h3>Кваст</h3>
+                                    <p>Промо сайт производителя крафтовогокваса</p>
+                                    <button class="btn-style">9 900 руб.</button>
+                                </div>                   
+                            </li>
+                        </ul>
+                        <ul class="paginator">
+                            <li><a class="btn-style btn-style-link onpage" href="#" aria-label="Номер страницы - 1">1</a></li>
+                            <li><a class="btn-style btn-style-link" href="#" aria-label="">2</a></li>
+                            <li><a class="btn-style btn-style-link" href="#" aria-label="">3</a></li>
+                            <li><a class="btn-style btn-style-link" href="#" aria-label="">Следущая</a></li>
+                        </ul>
+                    </section>
+                </div>    
+            </div>
+
+            <section class="map">
+                <h2 class="visually-hidden">Карта</h2>
+                <button class="map-btn" type="button">
+                    <img class="map-image" src="files/map.png" width="1440" height="416" alt="Наше расположение на карте.">
+                    <img class="map-marker" src="files/map-marker.png" width="231" height="190" alt="Указатель на карте.">
+                </button>
+                <div class="container">
+                    <div class="contacts">
+                        <h3 lang="en" aria-label="Nerds design studio">NЁRDS DESIGN STUDIO</h3>
+                        <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+                        <p><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
+                        <button class="btn-style" type="button">Напишите нам</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="container">
+                <ul class="social-list">
+                    <li><a class="vk-icon" href="#" aria-label="Вконтакте.">Вконтакте</a></li>
+                    <li><a class="fb-icon" href="#" aria-label="Фейсбук.">Фейсбук</a></li>
+                    <li><a class="in-icon" href="#" aria-label="Инстаграмм.">Инстаграмм</a></li>
+                </ul>
+                <div class="promo">
+                    <p>Давайте дружить, это выгодно!</p>
+                    <p>Скидка 10% для друзей на социальные сети</p>
+                </div>
+            </div>
+        </footer>
+
+        <section class="modal-contact-form">
+            <h2>Напишите нам</h2>
+            <form method="POST" action="http://echo.htmlacademy.ru">
+                <h3 class="visually-hidden">Форма обратной связи</h3>
+                <div class="personal-data">
+                    <label for="name-field">Ваше имя:<br>
+                    <input class="ph-opacity" type="text" id="name-field" name="name" placeholder="Имя Фамилия">
+                    </label>
+
+                    <label for="email-field">Ваше <span lang="en">email</span>:<br>
+                    <input class="ph-opacity" type="email" id="email-field" name="email" placeholder="email@example.com" aria-live="polite">
+                    </label>
+                </div>
+                <label for="message-field">Текст письма:</label><br>
+                <textarea class="ph-opacity" id="message-field" name="message" placeholder="В свободной форме"></textarea>
+                
+                <button class="btn-style" type="submit">Отправить</button>
+            </form>
+
+            <button class="modal-btn-close" aria-label="Кнопка закрытия всплывающего окна">Закрыть</button>
+        </section>
+        <div class="overlay"></div>
+
+        <script src="./js/popup-script.js"></script>
+    </body>
+</html>
