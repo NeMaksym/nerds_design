@@ -4,13 +4,14 @@
         <meta charset="utf-8">
         <title>Страница каталога шаблонов Nerd`s</title>
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/styles-min.css">
+        <link rel="stylesheet" href="css/styles.css">
+<!--        <link rel="stylesheet" href="css/styles-min.css">-->
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     </head>
     <body class="catalog-page">
         <header>
             <nav class="user-navigation container">
-                <a class="logo" href="#"><img src="files/nerds-logo.svg" width="160" height="65" alt="Логотип сайта."></a>
+                <a class="logo" href="./index.html"><img src="files/nerds-logo.svg" width="160" height="65" alt="Логотип сайта."></a>
 
                 <ul class="site-navigation" role="menubar">
                     <li role="menuitem"><a class="menu-item" href="#">Студия</a></li>
@@ -25,7 +26,7 @@
 
         <main>
             <h1>Магазин готовых шаблонов</h1>
-           
+
             <div class="container catalog-container">
                 <section class="filter-form">
                     <h2 class="visually-hidden">Фильтры поиска шаблонов</h2>
@@ -41,10 +42,10 @@
                             </div>
                             <div class="price-fields">
                                 <label>От
-                                    <input type="text" name="from" id="min-value">
+                                    <input type="number" name="from" id="min-value" min="0">
                                 </label>
                                 <label>До
-                                    <input type="text" name="to" id="max-value">
+                                    <input type="number" name="to" id="max-value" min="1">
                                 </label>
                             </div>
                         </fieldset>
@@ -159,7 +160,7 @@
                                     <h3>Кваст</h3>
                                     <p>Промо сайт производителя крафтовогокваса</p>
                                     <button class="btn-style">9 900 руб.</button>
-                                </div>                   
+                                </div>
                             </li>
                         </ul>
                         <ul class="paginator">
@@ -169,7 +170,7 @@
                             <li><a class="btn-style btn-style-link" href="#" aria-label="">Следущая</a></li>
                         </ul>
                     </section>
-                </div>    
+                </div>
             </div>
 
             <section class="map">
@@ -188,7 +189,7 @@
                 </div>
             </section>
         </main>
-        
+
         <footer>
             <div class="container">
                 <ul class="social-list">
@@ -218,7 +219,7 @@
                 </div>
                 <label for="message-field">Текст письма:</label><br>
                 <textarea class="ph-opacity" id="message-field" name="message" placeholder="В свободной форме"></textarea>
-                
+
                 <button class="btn-style" type="submit">Отправить</button>
             </form>
 

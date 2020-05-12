@@ -20,15 +20,15 @@ body {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
     position: absolute;
-  
+
     width: 1px;
     height: 1px;
     margin: -1px;
     border: 0;
     padding: 0;
-  
+
     white-space: nowrap;
-  
+
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
@@ -52,7 +52,7 @@ a {
 
 .btn-style-link {
     display: block;
-    
+
     line-height: 50px;
     text-align: center;
 }
@@ -194,7 +194,7 @@ footer .social-list {
 
     border-radius: 50%;
     background-color: #e1e1e1;
-    
+
     font-size: 0;
     text-align: center;
 }
@@ -240,7 +240,7 @@ footer .social-list {
 
 .promo p:last-child {
     margin: 0;
-    
+
     line-height: 22px;
     color: #444;
 }
@@ -249,7 +249,7 @@ footer .social-list {
 /* слайдер */
 .index-page .slider {
     position: relative;
-    
+
     background-color: #eeeeee;
 }
 
@@ -299,7 +299,7 @@ footer .social-list {
     flex-basis: 698px;
     height: 413px;
     margin: 0 auto;
-    
+
     background-image: url(../img/index/slide1.png);
 }
 
@@ -310,7 +310,7 @@ footer .social-list {
 .slide-2 h3 {
     width: 515px;
     margin-left: -18px;
-    
+
     position: relative;
     top: 0;
     left: 18px;
@@ -334,14 +334,14 @@ footer .social-list {
 .slide-3 h3 {
     width: 406px;
     margin-left: -6px;
-    
+
     position: relative;
     top: 0;
     left: 6px;
 }
 
 .slide-3 p {
-    width: 360px;    
+    width: 360px;
 }
 
 .slide-3 .photo-block {
@@ -506,7 +506,7 @@ footer .social-list {
 
 .about-us .left-block {
     flex-basis: 660px;
-    
+
     margin-right: auto;
     padding-top: 33px;
 }
@@ -617,7 +617,7 @@ footer .social-list {
 .results .websites-list {
     margin: 0;
     padding: 0;
-    
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -642,7 +642,7 @@ footer .social-list {
 
     background-color: black;
     opacity: 0.2;
-} 
+}
 
 .websites-list a {
     display: flex;
@@ -764,7 +764,7 @@ footer .social-list {
 
     background-color: white;
     box-shadow: 10px 10px 40px 0px rgba(0, 1, 1, 0.75);
-    z-index: 100;      
+    z-index: 100;
 }
 
 .modal-contact-form.modal-show {
@@ -774,7 +774,7 @@ footer .social-list {
 .modal-contact-form h2 {
     margin: 0;
     margin-bottom: 50px;
-    
+
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
@@ -970,7 +970,7 @@ footer .social-list {
     left: 0px;
 
     background-color: #00ca74
-}   
+}
 
 .range-block .toddler {
     width: 4px;
@@ -1026,7 +1026,7 @@ text-transform: uppercase;
     position: relative;
     display: inline-block;
     padding-left: 35px;
-    
+
     vertical-align: top;
     line-height: 39px;
 }
@@ -1059,7 +1059,7 @@ text-transform: uppercase;
     position: relative;
     display: inline-block;
     padding-left: 35px;
-    
+
     vertical-align: top;
     line-height: 39px;
 }
@@ -1068,7 +1068,7 @@ text-transform: uppercase;
     content: "";
     width: 23px;
     height: 23px;
-    
+
     position: absolute;
     top: 6px;
     left: 0;
@@ -1086,7 +1086,7 @@ text-transform: uppercase;
 .features-list input[type="checkbox"]:focus + label::before,
 .grids-list input[type="radio"]:focus + label::before {
     outline: thin dotted;
-    outline: 5px auto -webkit-focus-ring-color; 
+    outline: 5px auto -webkit-focus-ring-color;
 }
 
 .features-list label:hover,
@@ -1108,12 +1108,12 @@ text-transform: uppercase;
     color: rgba(40, 49, 54, 0.3)
 }
 
-.features-list input[type="checkbox"]:checked:focus + label::before,
-.features-list input[type="checkbox"]:focus + label::before,
-.grids-list input[type="radio"]:focus + label::before,
-.grids-list input[type="radio"]:checked:focus + label::before {
-    opacity: 0.1;
-}
+/*.features-list input[type="checkbox"]:checked:focus + label::before,*/
+/*.features-list input[type="checkbox"]:focus + label::before,*/
+/*.grids-list input[type="radio"]:focus + label::before,*/
+/*.grids-list input[type="radio"]:checked:focus + label::before {*/
+/*    opacity: 0.1;*/
+/*}*/
 
 
 .filter-form button[type="submit"] {
@@ -1130,7 +1130,7 @@ text-transform: uppercase;
 .filter-form button[type="submit"]:focus {
     background-color: #d5d5d5;
     color: rgba(0, 0, 0, 0.3);
-}  
+}
 
 /* Сортировка и карточки товаров */
 .catalog-page .catalog-wrapper {
@@ -1243,7 +1243,7 @@ text-transform: uppercase;
     position: relative;
     flex-basis: 360px;
     margin-bottom: 35px;
-    padding-top: 39px; 
+    padding-top: 39px;
 }
 
 .cards-wrapper .product-card::before {
@@ -1272,7 +1272,7 @@ text-transform: uppercase;
 
 .product-card .hover-block {
     display: none;
-} 
+}
 
 .product-card:hover .hover-block {
     display: block;
